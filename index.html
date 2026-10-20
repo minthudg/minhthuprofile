@@ -5,12 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f5f3ee">
   <meta name="description" content="Một góc nhỏ giới thiệu về Nguyễn Đặng Minh Thư — âm nhạc, nhiếp ảnh và những điều mình yêu thích.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Lora:ital,wght@1,400&display=swap" rel="stylesheet">
   <title>Nguyễn Đặng Minh Thư — Giới thiệu bản thân</title>
   <style>
     :root{--paper:#f5f3ee;--ink:#20231f;--muted:#73776e;--line:#deded5;--green:#c9d6c0;--deep:#405343;--white:#fffefa}
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
-    body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:"Be Vietnam Pro",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;line-height:1.65}
     a{color:inherit}
     .wrap{width:min(1080px,calc(100% - 48px));margin:auto}
     .nav{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
@@ -20,7 +23,7 @@
     .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:64px;align-items:center;padding:88px 0 96px}
     .eyebrow{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--deep);font-weight:750}
     h1{font-size:clamp(46px,7vw,82px);line-height:1.02;letter-spacing:-.065em;font-weight:650;margin:23px 0 22px;max-width:680px}
-    h1 span{font-family:Georgia,serif;font-weight:400;font-style:italic;color:var(--deep)}
+    h1 span{font-family:"Lora",Georgia,serif;font-weight:400;font-style:italic;color:var(--deep)}
     .lead{font-size:17px;line-height:1.9;color:#5e6259;max-width:520px}
     .hero-foot{margin-top:34px;display:flex;align-items:center;gap:14px;color:var(--muted);font-size:12px}
     .dot{width:7px;height:7px;border-radius:50%;background:#71866b;display:inline-block}
@@ -51,13 +54,8 @@
     .skill{border-top:2px solid var(--deep);padding:18px 0}
     .skill b{display:block;font-size:16px;margin-bottom:7px}
     .skill p{font-size:14px;color:var(--muted);margin:0}
-    .dream{background:var(--deep);color:#f7f5ee;padding:42px;display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center}
-    .dream .eyebrow{color:#c9d6c0}
-    .dream h2{margin:12px 0}
-    .dream p{color:#d5ddd1;margin:0;max-width:600px}
-    .de-mark{font-family:Georgia,serif;font-size:clamp(58px,9vw,100px);line-height:1;color:#c9d6c0;letter-spacing:-.08em}
     footer{padding:28px 0 38px;display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:12px}
-    @media(max-width:720px){.wrap{width:min(100% - 32px,560px)}.nav{height:70px}.nav-note{display:none}.hero{grid-template-columns:1fr;gap:20px;padding:60px 0 64px}.hero-copy{order:1}.visual{order:0;min-height:270px}.shape{width:200px}.sun{right:13%;top:4%}.stamp{right:8%;bottom:3%}section{padding:50px 0}.section-head{grid-template-columns:1fr;gap:12px}.facts{grid-template-columns:1fr}.fact{min-height:0}.interests{grid-template-columns:1fr}.skills{grid-template-columns:1fr;gap:8px}.skill{padding:14px 0}.dream{padding:28px;grid-template-columns:1fr}.de-mark{font-size:62px}footer{flex-direction:column;gap:5px}}
+    @media(max-width:720px){.wrap{width:min(100% - 32px,560px)}.nav{height:70px}.nav-note{display:none}.hero{grid-template-columns:1fr;gap:20px;padding:60px 0 64px}.hero-copy{order:1}.visual{order:0;min-height:270px}.shape{width:200px}.sun{right:13%;top:4%}.stamp{right:8%;bottom:3%}section{padding:50px 0}.section-head{grid-template-columns:1fr;gap:12px}.facts{grid-template-columns:1fr}.fact{min-height:0}.interests{grid-template-columns:1fr}.skills{grid-template-columns:1fr;gap:8px}.skill{padding:14px 0}footer{flex-direction:column;gap:5px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   </style>
 </head>
@@ -114,12 +112,6 @@
           <div class="skill"><b>Lãnh đạo</b><p>Có khả năng định hướng và phối hợp công việc trong nhóm.</p></div>
           <div class="skill"><b>Làm việc nhóm</b><p>Biết cùng mọi người chia sẻ trách nhiệm để hướng đến mục tiêu chung.</p></div>
           <div class="skill"><b>Giao tiếp</b><p>Có kỹ năng giao tiếp cơ bản và sẵn sàng tiếp tục rèn luyện.</p></div>
-        </div>
-      </section>
-      <section id="dream">
-        <div class="dream">
-          <div><span class="eyebrow">04 / A DREAM TO FOLLOW</span><h2>Một ngày nào đó, ở Đức.</h2><p>Mình mong muốn được đi du học Đức — một mục tiêu để từng bước chuẩn bị, học hỏi và cố gắng trong những năm tháng phía trước.</p></div>
-          <div class="de-mark" aria-label="Germany">DE.</div>
         </div>
       </section>
     </main>

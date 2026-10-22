@@ -135,6 +135,30 @@ h2{font-size:clamp(30px,4vw,52px);line-height:.98;letter-spacing:-.07em;font-wei
 footer{border-top:2px solid var(--ink);padding:22px 0 30px;color:var(--ink);text-transform:uppercase;letter-spacing:.06em;font-size:10px}
 @media(max-width:720px){.wrap{width:calc(100% - 32px)}.nav{height:66px}.hero{grid-template-columns:1fr;gap:14px;padding:48px 0 56px}.hero-copy{order:1}.visual{order:0;min-height:240px}.shape{width:180px}.sun{right:18%;top:4%}.stamp{right:5%;bottom:0}.section-head{grid-template-columns:1fr;gap:14px}.fact{padding:16px 8px 16px 0}.fact strong{font-size:14px}.interests{grid-template-columns:1fr}section{padding:42px 0}h1{font-size:clamp(50px,15vw,80px)}}
 
+
+/* Sparkle / Coquette / Y2K remix */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap');
+:root{--paper:#fff7fc;--ink:#32172d;--muted:#87677f;--line:#efc9df;--green:#ff79bd;--deep:#6f2857;--white:#fff;--pink:#ffb8dc;--silver:#d9d6e5}
+html{background:#fff7fc}
+body{color:var(--ink)!important;background:radial-gradient(ellipse at 8% 5%,rgba(255,188,224,.38),transparent 27%),radial-gradient(ellipse at 95% 20%,rgba(218,211,255,.42),transparent 25%),linear-gradient(135deg,#fff9fd 0%,#fff4fa 48%,#f9f5ff 100%)!important;font-family:'DM Sans',sans-serif!important}
+body:before{content:"✧  ˚｡⋆୨୧˚  ✦";position:fixed;right:22px;bottom:15px;z-index:5;color:#ed73b5;font-size:15px;letter-spacing:5px;pointer-events:none;text-shadow:0 0 10px #ffc9e7}
+h1,h2,h3{color:#421c39!important;letter-spacing:-.045em}
+h1{ text-shadow:2px 2px 0 #ffd7ec,4px 4px 0 rgba(219,196,238,.65)!important}
+h1:after{content:" ✧";color:#f07ab8;font-family:'Playfair Display',serif;font-style:italic}
+h2:after{content:" ୨୧";color:#e779b3;font-size:.7em}
+a{color:#a83b7b!important;text-decoration-color:#f0a8d0!important;text-underline-offset:4px}
+a:hover{color:#e34d9a!important}
+nav,.nav,header{border-color:#edc1dc!important}
+nav a,.nav a{border-radius:999px!important;border:1px solid #f1c6df!important;background:rgba(255,255,255,.7)!important;padding:8px 13px!important;box-shadow:0 3px 0 rgba(230,155,198,.18)!important}
+button,.button,.chip,.tag{border-radius:999px!important}
+.card,.block,.photo-item,.skill,.interest,.fact,.tile{border-color:#edc5dc!important}
+.card,.skill,.interest,.fact,.tile{background:rgba(255,255,255,.68)!important;box-shadow:0 8px 24px rgba(180,105,151,.08)!important}
+.block{background:rgba(255,255,255,.38)!important}
+img{border:1px solid rgba(225,163,201,.65)!important;box-shadow:0 8px 22px rgba(168,95,145,.12)!important}
+footer{color:#946c87!important;border-color:#ecc6dd!important}
+::selection{background:#ffb8dc;color:#32172d}
+@media(max-width:700px){body:before{right:10px;bottom:8px;font-size:12px}h1{ text-shadow:1px 1px 0 #ffd7ec,2px 2px 0 rgba(219,196,238,.65)!important}}
+
 </style>
 </head>
 <body>

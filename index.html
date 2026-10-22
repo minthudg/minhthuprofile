@@ -87,7 +87,55 @@
     footer{color:#8b7971}
     @media(max-width:720px){.hero{padding-top:46px}.visual{min-height:240px}.shape{box-shadow:10px 12px 0 #f8e9e2}}
   
-  </style>
+  
+/* Creative portfolio direction — editorial grid, expressive type, image-led */
+:root{--paper:#f8f7f2;--ink:#171717;--muted:#686860;--line:#c9c9bf;--green:#d8ff3e;--deep:#202020;--white:#fff}
+body{font-family:"DM Sans",Arial,sans-serif;background:var(--paper);background-image:none;line-height:1.55}
+.wrap{width:min(1180px,calc(100% - 64px))}
+.nav{height:76px;border-bottom:2px solid var(--ink)}
+.wordmark{font-family:"DM Sans",sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:-.06em;font-size:18px}
+.nav-note{font-size:10px;letter-spacing:.12em}
+.back{border:1px solid var(--ink);border-radius:0;padding:8px 12px;text-transform:uppercase;font-size:10px;letter-spacing:.06em}
+.back:hover{background:var(--green);color:var(--ink)}
+.hero{grid-template-columns:1.35fr .65fr;gap:32px;padding:72px 0 82px;align-items:end}
+.eyebrow{font-size:10px;letter-spacing:.13em;color:var(--ink);background:var(--green);padding:5px 8px;display:inline-block}
+h1,h2,h3{font-family:"DM Sans",Arial,sans-serif}
+h1{font-size:clamp(54px,9vw,120px);line-height:.9;letter-spacing:-.09em;font-weight:800;margin:24px 0;max-width:820px}
+h1 span{font-family:"Playfair Display",Georgia,serif;font-weight:500;font-style:italic;color:var(--ink);letter-spacing:-.07em}
+.lead{font-size:16px;max-width:480px;color:var(--ink);line-height:1.7}
+.hero-foot{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink)}
+.dot{background:var(--ink)}
+.visual{min-height:390px}
+.shape{width:min(300px,90%);border-radius:0;background:var(--green);box-shadow:12px 12px 0 var(--ink)}
+.shape:before{border:2px solid var(--ink);border-radius:0;width:75%;height:75%;top:12%}
+.shape:after{border-radius:0;background:#f8f7f2;width:48%;height:48%;transform:translateX(-50%) rotate(12deg)}
+.sun{border-radius:0;background:#ff684d;transform:rotate(12deg)}
+.leaf{border:2px solid var(--ink);border-radius:100% 0 100% 0}
+.leaf:after{background:var(--ink)}
+.stamp{border:1px solid var(--ink);border-radius:0;box-shadow:5px 5px 0 var(--ink);font:700 11px "DM Sans",sans-serif;text-transform:uppercase;letter-spacing:.05em}
+section{padding:56px 0;border-top:2px solid var(--ink)}
+.section-head{grid-template-columns:.7fr 1.3fr;gap:50px;margin-bottom:30px}
+h2{font-size:clamp(30px,4vw,52px);line-height:.98;letter-spacing:-.07em;font-weight:800}
+.section-desc{font-size:15px;color:var(--muted);max-width:500px}
+.facts{gap:0;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
+.fact{background:transparent;border:0;border-right:1px solid var(--ink);min-height:110px;padding:20px 16px 20px 0}
+.fact:last-child{border-right:0}
+.fact small{color:var(--muted);letter-spacing:.08em}
+.fact strong{font-size:17px}
+.interests{gap:0;border-top:1px solid var(--ink)}
+.interest{background:transparent;border:0;border-bottom:1px solid var(--ink);border-radius:0;box-shadow:none;padding:22px 8px 22px 0;gap:24px}
+.interest:hover,.interest:focus-visible{background:var(--green);border-color:var(--ink);transform:none;box-shadow:none;padding-left:12px}
+.num{font-size:11px;color:var(--ink);background:var(--green);padding:3px 6px}
+.interest h3{font-size:clamp(19px,2vw,25px);font-weight:750;letter-spacing:-.05em}
+.interest p{font-size:13px;color:var(--muted)}
+.tag{border:1px solid var(--ink);border-radius:0;background:transparent;color:var(--ink);text-transform:uppercase;font-size:10px;letter-spacing:.06em}
+.skill{border-top:2px solid var(--ink);padding:18px 14px 18px 0}
+.skill b{font-size:19px;letter-spacing:-.04em}
+.skill p{color:var(--muted)}
+footer{border-top:2px solid var(--ink);padding:22px 0 30px;color:var(--ink);text-transform:uppercase;letter-spacing:.06em;font-size:10px}
+@media(max-width:720px){.wrap{width:calc(100% - 32px)}.nav{height:66px}.hero{grid-template-columns:1fr;gap:14px;padding:48px 0 56px}.hero-copy{order:1}.visual{order:0;min-height:240px}.shape{width:180px}.sun{right:18%;top:4%}.stamp{right:5%;bottom:0}.section-head{grid-template-columns:1fr;gap:14px}.fact{padding:16px 8px 16px 0}.fact strong{font-size:14px}.interests{grid-template-columns:1fr}section{padding:42px 0}h1{font-size:clamp(50px,15vw,80px)}}
+
+</style>
 </head>
 <body>
   <div class="wrap">

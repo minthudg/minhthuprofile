@@ -25,7 +25,38 @@
     footer{color:#8b7971;border-color:var(--line)}
     @media(max-width:620px){.block{padding:26px 0}.card{padding:17px}}
   
-  </style></head><body><div class="wrap"><header class="nav"><a class="wordmark" href="index.html">MINH THƯ.</a><a class="back" href="index.html">← Về trang chủ</a></header><main><header class="hero"><span class="eyebrow">04 / SCREEN & STORIES</span><h1>Phim, manga & <span>anime</span></h1><p class="intro">Mình xem phim đủ thể loại trừ kinh dị vì sợ ma. Dưới đây là những manga, anime, phim hoạt hình và nhân vật mình đã kể tên.</p></header><section class="block"><h2>Manga & anime yêu thích</h2><ul class="list"><li>Call of the Night</li><li>MagMell Shinkai Suizokukan (Thủy Cung Đáy Biển Magmell)</li><li>Tokyo Aliens</li><li>MarriageToxin (Mai Mối Cho Độc Sư)</li><li>Beastars</li><li>Blade of the Moon Princess (Nguyệt Hạ Thần Kiếm)</li><li>The Apothecary Diaries (Dược Sư Tự Sự)</li><li>Kocchi Muite! Miiko (Miko - Cô bé nhí nhảnh)</li><li>Kimetsu no Yaiba (Thanh Gươm Diệt Quỷ)</li><li>Detective Conan (Thám tử lừng danh Conan)</li></ul><p><strong>Manga yêu thích nhất:</strong> Thám tử lừng danh Conan, Miko và Dược Sư Tự Sự.</p></section>
+  
+/* Creative portfolio direction — editorial grid, expressive type, image-led */
+:root{--paper:#f8f7f2;--ink:#171717;--muted:#686860;--line:#c9c9bf;--green:#d8ff3e;--deep:#202020;--white:#fff}
+body{font-family:"DM Sans",Arial,sans-serif;background:var(--paper);background-image:none;line-height:1.7;color:var(--ink)}
+.wrap{width:min(1040px,calc(100% - 64px))}
+.nav{height:76px;border-bottom:2px solid var(--ink)}
+.wordmark{font-family:"DM Sans",sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:-.06em;font-size:18px}
+.back{border:1px solid var(--ink);border-radius:0;padding:8px 12px;text-transform:uppercase;font-size:10px;letter-spacing:.06em}
+.back:hover{background:var(--green);color:var(--ink)}
+.eyebrow{font-size:10px;letter-spacing:.13em;color:var(--ink);background:var(--green);padding:5px 8px;display:inline-block}
+h1,h2,h3{font-family:"DM Sans",Arial,sans-serif;color:var(--ink)}
+h1{font-size:clamp(48px,8vw,94px);line-height:.92;letter-spacing:-.085em;font-weight:800;margin:20px 0}
+h1 span{font-family:"Playfair Display",Georgia,serif;font-style:italic;font-weight:500;color:var(--ink)}
+.intro{color:var(--ink);font-size:16px;line-height:1.8;max-width:700px}
+.hero{padding:58px 0 48px}
+.block{padding:30px 0;border-top:2px solid var(--ink)}
+h2{font-size:clamp(25px,3vw,34px);letter-spacing:-.065em;font-weight:800}
+h3{font-size:18px;letter-spacing:-.04em;font-weight:750}
+.card{background:transparent;border:1px solid var(--ink);border-radius:0;padding:18px 20px;margin:10px 0;box-shadow:none;transition:background .2s}
+.card:hover{transform:none;box-shadow:none;background:#eff2e4}
+.chip{background:transparent;border:1px solid var(--ink);color:var(--ink);border-radius:0;text-transform:uppercase;font-size:10px;letter-spacing:.05em}
+.grid{gap:12px}
+.photo-grid{gap:12px}
+.photo-item{background:transparent;border:1px solid var(--ink);border-radius:0;box-shadow:none}
+.photo-item img{transition:filter .25s,transform .3s;filter:saturate(.9)}
+.photo-item:hover img{transform:scale(1.015);filter:saturate(1.12)}
+.photo-item figcaption{display:none!important}
+.list li::marker{color:var(--ink)}
+footer{border-top:2px solid var(--ink);color:var(--ink);text-transform:uppercase;letter-spacing:.06em;font-size:10px}
+@media(max-width:620px){.wrap{width:calc(100% - 32px)}.hero{padding:42px 0 34px}.block{padding:24px 0}.grid,.photo-grid{grid-template-columns:1fr}.photo-item img{height:auto;max-height:none}}
+
+</style></head><body><div class="wrap"><header class="nav"><a class="wordmark" href="index.html">MINH THƯ.</a><a class="back" href="index.html">← Về trang chủ</a></header><main><header class="hero"><span class="eyebrow">04 / SCREEN & STORIES</span><h1>Phim, manga & <span>anime</span></h1><p class="intro">Mình xem phim đủ thể loại trừ kinh dị vì sợ ma. Dưới đây là những manga, anime, phim hoạt hình và nhân vật mình đã kể tên.</p></header><section class="block"><h2>Manga & anime yêu thích</h2><ul class="list"><li>Call of the Night</li><li>MagMell Shinkai Suizokukan (Thủy Cung Đáy Biển Magmell)</li><li>Tokyo Aliens</li><li>MarriageToxin (Mai Mối Cho Độc Sư)</li><li>Beastars</li><li>Blade of the Moon Princess (Nguyệt Hạ Thần Kiếm)</li><li>The Apothecary Diaries (Dược Sư Tự Sự)</li><li>Kocchi Muite! Miiko (Miko - Cô bé nhí nhảnh)</li><li>Kimetsu no Yaiba (Thanh Gươm Diệt Quỷ)</li><li>Detective Conan (Thám tử lừng danh Conan)</li></ul><p><strong>Manga yêu thích nhất:</strong> Thám tử lừng danh Conan, Miko và Dược Sư Tự Sự.</p></section>
 <section class="block"><h2>Nhân vật mình yêu thích</h2><div class="grid"><div class="card"><h3>Detective Conan</h3><p>Kudo Shinichi (Edogawa Conan)</p></div><div class="card"><h3>Kocchi Muite! Miiko</h3><p>Yamada Miiko</p></div><div class="card"><h3>Kimetsu no Yaiba</h3><p>Kamado Tanjiro</p></div><div class="card"><h3>The Apothecary Diaries</h3><p>Mao Mao (Miêu Miêu)</p></div><div class="card"><h3>Blade of the Moon Princess</h3><p>Takeuchi Kaguya</p></div><div class="card"><h3>Beastars</h3><p>Legoshi</p></div><div class="card"><h3>MarriageToxin</h3><p>Hikaru Gero</p></div><div class="card"><h3>Tokyo Aliens</h3><p>Sho Tenkubashi</p></div><div class="card"><h3>MagMell Shinkai Suizokukan</h3><p>Tenjo Kotaro</p></div><div class="card"><h3>Call of the Night</h3><p>Yamori Ko</p></div></div></section>
 <section class="block"><h2>Phim hoạt hình mình thích</h2><ul class="list"><li>Vùng đất linh hồn (Spirited Away, 2001)</li><li>Hàng xóm của tôi là Totoro (My Neighbor Totoro, 1988)</li><li>Lâu đài bay của pháp sư Howl (Howl's Moving Castle, 2004)</li><li>Cô bé người cá Ponyo</li></ul></section>
 <section class="block"><h2>Bias, bias wrecker & OTP</h2>

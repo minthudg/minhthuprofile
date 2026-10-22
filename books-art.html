@@ -25,4 +25,35 @@
     footer{color:#8b7971;border-color:var(--line)}
     @media(max-width:620px){.block{padding:26px 0}.card{padding:17px}}
   
-  </style></head><body><div class="wrap"><header class="nav"><a class="wordmark" href="index.html">MINH THƯ.</a><a class="back" href="index.html">← Về trang chủ</a></header><main><header class="hero"><span class="eyebrow">03 / BOOKS & ART</span><h1>Sách & <span>hội họa</span></h1><p class="intro">Mình rất yêu sách, đặc biệt là tiểu thuyết. Khi vẽ, mình thích vẽ nhân vật.</p></header><section class="block"><h2>Những tác phẩm mình đã đọc</h2><div class="card"><ul class="list"><li>Totto-chan bên cửa sổ phần 1 và 2</li><li>Cây cam ngọt của tôi</li><li>Sưởi ấm mặt trời</li><li>Công Chúa Nhỏ</li><li>Trong gia đình</li><li>Tuyển tập các quyển sách về Anne Tóc Đỏ</li><li>Lâu đài bay của pháp sư Howl</li><li>Những Tấm Lòng Cao Cả</li><li>Sherlock Holmes</li><li>Bị thiêu sống</li><li>Phản Bội</li></ul></div></section><section class="block"><h2>Sách yêu thích nhất</h2><ul class="list"><li><strong>Cây Cam Ngọt Của Tôi</strong></li><li><strong>Totto-chan bên cửa sổ</strong> — phần một</li><li><strong>Công Chúa Nhỏ</strong></li><li><strong>Anne Tóc Đỏ dưới chái nhà xanh</strong></li></ul></section><section class="block"><h2>Vẽ</h2><div class="card"><p>Mình thích vẽ nhân vật.</p></div></section></main><footer>© 2026 · Nguyễn Đặng Minh Thư</footer></div></body></html>
+  
+/* Creative portfolio direction — editorial grid, expressive type, image-led */
+:root{--paper:#f8f7f2;--ink:#171717;--muted:#686860;--line:#c9c9bf;--green:#d8ff3e;--deep:#202020;--white:#fff}
+body{font-family:"DM Sans",Arial,sans-serif;background:var(--paper);background-image:none;line-height:1.7;color:var(--ink)}
+.wrap{width:min(1040px,calc(100% - 64px))}
+.nav{height:76px;border-bottom:2px solid var(--ink)}
+.wordmark{font-family:"DM Sans",sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:-.06em;font-size:18px}
+.back{border:1px solid var(--ink);border-radius:0;padding:8px 12px;text-transform:uppercase;font-size:10px;letter-spacing:.06em}
+.back:hover{background:var(--green);color:var(--ink)}
+.eyebrow{font-size:10px;letter-spacing:.13em;color:var(--ink);background:var(--green);padding:5px 8px;display:inline-block}
+h1,h2,h3{font-family:"DM Sans",Arial,sans-serif;color:var(--ink)}
+h1{font-size:clamp(48px,8vw,94px);line-height:.92;letter-spacing:-.085em;font-weight:800;margin:20px 0}
+h1 span{font-family:"Playfair Display",Georgia,serif;font-style:italic;font-weight:500;color:var(--ink)}
+.intro{color:var(--ink);font-size:16px;line-height:1.8;max-width:700px}
+.hero{padding:58px 0 48px}
+.block{padding:30px 0;border-top:2px solid var(--ink)}
+h2{font-size:clamp(25px,3vw,34px);letter-spacing:-.065em;font-weight:800}
+h3{font-size:18px;letter-spacing:-.04em;font-weight:750}
+.card{background:transparent;border:1px solid var(--ink);border-radius:0;padding:18px 20px;margin:10px 0;box-shadow:none;transition:background .2s}
+.card:hover{transform:none;box-shadow:none;background:#eff2e4}
+.chip{background:transparent;border:1px solid var(--ink);color:var(--ink);border-radius:0;text-transform:uppercase;font-size:10px;letter-spacing:.05em}
+.grid{gap:12px}
+.photo-grid{gap:12px}
+.photo-item{background:transparent;border:1px solid var(--ink);border-radius:0;box-shadow:none}
+.photo-item img{transition:filter .25s,transform .3s;filter:saturate(.9)}
+.photo-item:hover img{transform:scale(1.015);filter:saturate(1.12)}
+.photo-item figcaption{display:none!important}
+.list li::marker{color:var(--ink)}
+footer{border-top:2px solid var(--ink);color:var(--ink);text-transform:uppercase;letter-spacing:.06em;font-size:10px}
+@media(max-width:620px){.wrap{width:calc(100% - 32px)}.hero{padding:42px 0 34px}.block{padding:24px 0}.grid,.photo-grid{grid-template-columns:1fr}.photo-item img{height:auto;max-height:none}}
+
+</style></head><body><div class="wrap"><header class="nav"><a class="wordmark" href="index.html">MINH THƯ.</a><a class="back" href="index.html">← Về trang chủ</a></header><main><header class="hero"><span class="eyebrow">03 / BOOKS & ART</span><h1>Sách & <span>hội họa</span></h1><p class="intro">Mình rất yêu sách, đặc biệt là tiểu thuyết. Khi vẽ, mình thích vẽ nhân vật.</p></header><section class="block"><h2>Những tác phẩm mình đã đọc</h2><div class="card"><ul class="list"><li>Totto-chan bên cửa sổ phần 1 và 2</li><li>Cây cam ngọt của tôi</li><li>Sưởi ấm mặt trời</li><li>Công Chúa Nhỏ</li><li>Trong gia đình</li><li>Tuyển tập các quyển sách về Anne Tóc Đỏ</li><li>Lâu đài bay của pháp sư Howl</li><li>Những Tấm Lòng Cao Cả</li><li>Sherlock Holmes</li><li>Bị thiêu sống</li><li>Phản Bội</li></ul></div></section><section class="block"><h2>Sách yêu thích nhất</h2><ul class="list"><li><strong>Cây Cam Ngọt Của Tôi</strong></li><li><strong>Totto-chan bên cửa sổ</strong> — phần một</li><li><strong>Công Chúa Nhỏ</strong></li><li><strong>Anne Tóc Đỏ dưới chái nhà xanh</strong></li></ul></section><section class="block"><h2>Vẽ</h2><div class="card"><p>Mình thích vẽ nhân vật.</p></div></section></main><footer>© 2026 · Nguyễn Đặng Minh Thư</footer></div></body></html>
